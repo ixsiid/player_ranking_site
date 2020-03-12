@@ -8,6 +8,24 @@
     font-family: 'Kosugi Maru', sans-serif;
 }
 
+#info>* {
+    margin: 2em auto;
+    width: 40em;
+}
+
+#info figure {
+    float: left;
+    margin: 0.2em 1em 1em 1em;
+}
+
+#info figure img {
+    width: 15em;
+}
+
+#info p {
+    margin: 0.5em;
+}
+
 #ranking th:first-letter {
     font-size: 170%;
 }
