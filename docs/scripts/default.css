@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#title h1 {
+    width: 100%;
+    height: 2em;
+    text-align: center;
+    vertical-align: middle;
+    margin: 1em 0;
+}
+
+#navi {
+    background-color: black;
+}
+
+#navi ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    height: 2em;
+    align-items: center;
+}
+
+#navi li {
+    font-weight: bold;
+    font-size: 120%;
+    width: 12em;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+#info {
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+#info>* {
+    margin: 2em auto;
+    width: 40em;
+}
+
+#info figure {
+    float: left;
+    margin: 0.2em 1em 1em 1em;
+}
+
+#info figure img {
+    width: 15em;
+}
+
+#info p {
+    margin: 0.5em;
+}
+
+#ranking {
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+#ranking table {
+    margin: 2em auto;
+    border-collapse: collapse;
+}
+
+#ranking img {
+    width: 1.5em;
+}
+
+#ranking tr>* {
+    padding: 0.1em 1.1em;
+}
+
+#ranking tbody {
+    font-size: 130%;
+}
+
+#ranking .date {
+    font-size: 72%;
+    color: gray;
+    margin-left: 2em;
+}
+
+#ranking .download {
+    border: none;
+    cursor: pointer;
+}
+
+#footer {
+    width: 100%;
+}
+
+#footer * {
+    margin: 2em;
+}
+
+#controller {
+    position: fixed;
+    bottom: 0.5em;
+    right: 0.5em;
+}
+
+#controller ul {
+    list-style-type: none;
+}
+
+#controller li {
+    margin: 1.5em;
+}

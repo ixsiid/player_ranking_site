@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="List,keywords,here">
+    <meta name="description" content="Describe the site.">
+    <title>TITLE</title>
+    <script type="module">
+        import Ranking from './scripts/ranking.js';
+
+        const script_url = '(Enter your Script exec url)';
+        
+        window.addEventListener('DOMContentLoaded', () => {
+            Ranking.get(script_url);
+        }, { once: true, passive: true });
+    </script>
+    <link href="./scripts/default.css" rel="stylesheet" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="title">
+            <h1>TITLE</h1>
+        </div>
+        <div id="navi">
+            <ul>
+                <li onclick="document.querySelector('#info').scrollIntoView()">INFOMATION</li>
+                <li onclick="document.querySelector('#ranking').scrollIntoView()">RANKING</li>
+                <li onclick="document.querySelector('#footer').scrollIntoView()">CONTACT</li>
+            </ul>
+        </div>
+        <div id="info">
+            <p>This area is for writing a small article.</p>
+        </div>
+        <div id="ranking">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="ranking_body"></tbody>
+            </table>
+            <template id="ranking_template">
+                <tr>
+                    <td class="rank"></td>
+                    <td class="name"></td>
+                    <td><span class="score"></span><span class="date"></span></td>
+                    <td><button class="download"
+                                onclick="javascript: download_detail(this);"><img
+                                src="./images/download.png" /></button></td>
+                </tr>
+            </template>
+        </div>
+        <div id="footer">
+            <p>For exsample: foobar@mail.address</p>
+        </div>
+    </div>
+    <div id="controller">
+        <ul>
+            <li><img style="width: 3em;" id="scroll_top" src="./images/scroll_top.png"
+                    onclick="javascript: window.scrollTo({top: 0, behavior: 'smooth'});" /></li>
+        </ul>
+    </div>
+</body>
+
+</html>
