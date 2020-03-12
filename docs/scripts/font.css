@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2|Baloo+Tammudu+2|Kosugi+Maru|M+PLUS+1p|M+PLUS+Rounded+1c|Nanum+Pen+Script&display=swap');
+
+#navi {
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+#info {
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+#ranking th:first-letter {
+    font-size: 170%;
+}
+
+#ranking th {
+    text-transform: uppercase;
+    line-height: 0;
+    font-size: 92%;
+    font-family: 'Baloo Tammudu 2', cursive;
+    border-bottom: 1em solid coral;
+    transform: translate(0, 0.5em);
+}
+
+#ranking tr>* {
+    text-align: left;
+}
+
+#ranking tr>*:first-child {
+    text-align: right;
+}
+
+#ranking .rank {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 200%;
+}
+
+#ranking .name {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#ranking .score,
+#ranking .date {
+    font-family: 'Baloo 2', cursive;
+}
+
+#footer {
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
